@@ -16,11 +16,13 @@ jobs:
       - name: 'Terraform Format'
         uses: hashicorp/terraform-github-actions@master
       - name: Terraform Init
+        uses: hashicorp/terraform-github-actions@master
         id: init
         run: |
            rm -rf .terraform
            terraform init 
       - name: Terraform Plan
+        uses: hashicorp/terraform-github-actions@master
         id: plan
         run: |
           terraform plan 
