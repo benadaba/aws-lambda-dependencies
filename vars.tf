@@ -3,7 +3,7 @@ variable script_path {
 }
 
 # don't put boto3 inside: you have boto3 in Lambda python env
-# you have a limit of 5MB package!
+# you have a limit of 5MB package!d
 variable pip_dependencies {
   default = [] 
 }
