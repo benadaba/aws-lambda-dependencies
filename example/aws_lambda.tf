@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "eu-west-2"
-}
 
 module lambda_python_w_deps {
   source           = "../."
