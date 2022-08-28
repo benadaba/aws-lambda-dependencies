@@ -1,3 +1,5 @@
+
+
 # Preparing the folder full of dependencies and your script
 resource null_resource packaging {
   # trigers only if your script or list of dependencies were changed,,
