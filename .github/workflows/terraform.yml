@@ -24,6 +24,7 @@ jobs:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'plan'
       - name: Terraform destroy
+        uses: hashicorp/terraform-github-actions@master
         if: github.ref == 'refs/heads/destroy'
         id: destroy
         run: terraform destroy -auto-approve
