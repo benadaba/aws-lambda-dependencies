@@ -9,3 +9,8 @@ output package_sha {
 output handler_file_name {
   value = split(".", basename(var.script_path))[0]
 }
+
+
+output aws_role_arn {
+  value = aws_iam_role.lambda_exec_role.arn
+}
