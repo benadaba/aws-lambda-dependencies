@@ -1,5 +1,5 @@
 variable script_path {
-  default = ""
+  default = "./example/helloworld.py"
 }
 
 # don't put boto3 inside: you have boto3 in Lambda python env
