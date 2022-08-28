@@ -1,6 +1,6 @@
 # Preparing the folder full of dependencies and your script
 resource null_resource packaging {
-  # trigers only if your script or list of dependencies were changed
+  # trigers only if your script or list of dependencies were changed,,
   triggers = {
     dependencies = join(" ", var.pip_dependencies)
     #script_sha1  = sha1(file(var.script_path))
