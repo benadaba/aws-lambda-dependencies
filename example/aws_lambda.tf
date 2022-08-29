@@ -6,7 +6,7 @@ module lambda_python_w_deps {
   source           = "../."
   #script_path      = "${path.module}/helloworld.py"
   script_path      = "helloworld.py"
-  pip_dependencies = ["requests==2.28.1"]
+  pip_dependencies = ["requests==2.28.1","pip3==22.0.4"]
 }
 
 
