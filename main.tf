@@ -1,6 +1,4 @@
-provider "aws" {
-  region  = "eu-west-2"
-}
+
 
 # Preparing the folder full of dependencies and your script
 resource null_resource packaging {
