@@ -5,7 +5,7 @@ variable script_path {
 # don't put boto3 inside: you have boto3 in Lambda python env
 # you have a limit of 5MB package!d
 variable pip_dependencies {
-  default = [] 
+  default = ["requests==2.28.1"] 
 }
 
 variable temp_package_folder {
