@@ -26,7 +26,6 @@ jobs:
       - name: 'Terraform Destroy'
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.18
           tf_actions_subcommand: 'destroy --auto-approve'
         env:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
