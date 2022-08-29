@@ -21,7 +21,7 @@ resource null_resource packaging {
 
   # install dependencies to the folder
   provisioner local-exec {
-    command = "pip3 install ${join(" ", var.pip_dependencies)} --target /tmp/${var.temp_package_folder}"
+    command = "pip install ${join(" ", var.pip_dependencies)} --target /tmp/${var.temp_package_folder}"
   }
 
   # copy your script to the folder
